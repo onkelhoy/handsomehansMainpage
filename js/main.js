@@ -1,6 +1,9 @@
 $(document).ready(function(){
 	$('#category').children().click(function(){
 		displayCategory($(this).attr('index'));
+		$('.breadcrumb').children().remove();
+		$('.breadcrumb').append($('<li><a href="#">Category</a></li>'));
+		$('.breadcrumb').append($('<li class="active"></li>').text($(this).text()));
 	});
 	home();
 });

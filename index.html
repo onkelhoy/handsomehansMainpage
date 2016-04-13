@@ -18,16 +18,18 @@
 		</div>
 	</header>
 
-	<nav>
-		<ul>
-			<li>Categories
-				<ul id="category">
-					<li index="1">Category 1</li>
-					<li index="2">Category 2</li>
-					<li index="3">Category 3</li>
-					<li index="4">Category 4</li>
-					<li index="5">Category 5</li>
-					<li index="6">Category 6</li>
+	<nav class="navbar navbar-default">
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Category<span class="caret"></span></a>
+				<ul class="dropdown-menu" id="category">
+					<li index="1"><a href="javascript:void(0)">Category 1</a></li>
+					<li index="2"><a href="javascript:void(0)">Category 2</a></li>
+					<li index="3"><a href="javascript:void(0)">Category 3</a></li>
+					<li index="4"><a href="javascript:void(0)">Category 4</a></li>
+					<li index="5"><a href="javascript:void(0)">Category 5</a></li>
+					<li index="6"><a href="javascript:void(0)">Category 6</a></li>
 				</ul>
 			</li>
 			<li><a href="#" onclick="home()">Home</a></li>
@@ -35,8 +37,13 @@
 			<li><a href="#">Shit</a></li>
 			<li><a href="#">Face</a></li>
 		</ul>
+		</div>
 	</nav>	
-		
+	<ol class="breadcrumb">
+		<!-- <li><a href="#">Home</a></li>
+		<li><a href="#">Library</a></li> -->
+		<li class="active">Home</li>
+	</ol>
 	<div class="container">
 		<section class="hot col-md-8 col-md-offset-2">
 			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
