@@ -36,6 +36,7 @@ function addItem(data){
 
 	name.text(data.name);
 	price.text(data.price);
+	price.append($('<i class="fa fa-gg-circle" aria-hidden="true"></i>'));
 	description.text(data.description);
 
 	li.append(img, name, price, description);
